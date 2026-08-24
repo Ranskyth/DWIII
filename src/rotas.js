@@ -1,5 +1,19 @@
 const url = require("url")
 const fs = require("fs")
+const path = require("path")
+
+const pagesPath = path.join(__dirname, "..")
+
+const enviarHtml = (res, arquivo) => {
+    try {
+        const html = fs.readFileSync(path.join(pagesPath, arquivo), "utf8")
+        res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" })
+        res.end(html)
+    } catch (erro) {
+        res.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" })
+        res.end("Erro ao carregar a página")
+    }
+}
 
 const app = {
     rotas: (req, res) => {
@@ -7,22 +21,16 @@ const app = {
         let rota = url.parse(req.url).pathname
 
         if (rota === "/") {
-            res.writeHead(200, { "Content-type": "text/plan" })
-            res.end("oiiii")
+            enviarHtml(res, "index.html")
         }
         else if (rota === "/gabriel") {
-            res.writeHead(200, { "Content-type": "text/plan" })
-            
-            const html = fs.readFileSync("../pages/gabriel.html")
-            console.log(html)
-            res.end("oii")
+            enviarHtml(res, "pages/gabriel.html")
         }
         else if (rota === "/diego") {
-            res.writeHead(200, { "Content-type": "text/plan" })
-            res.end("sobre")
+            enviarHtml(res, "pages/diego.html")
         }
         else {
-            res.writeHead(404, { "Content-type": "text/plan" })
+            res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" })
             res.end("error 404")
         }
     }
