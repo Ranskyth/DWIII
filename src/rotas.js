@@ -1,19 +1,25 @@
 const url = require("url")
-
-const 
+const fs = require("fs")
 
 const app = {
     rotas: (req, res) => {
 
         let rota = url.parse(req.url).pathname
 
-        if (rota === "/oi") {
+        if (rota === "/") {
             res.writeHead(200, { "Content-type": "text/plan" })
             res.end("oiiii")
         }
-        else if (rota === "/me") {
+        else if (rota === "/gabriel") {
             res.writeHead(200, { "Content-type": "text/plan" })
-            res.end("meeeeeeee")
+            
+            const html = fs.readFileSync("../pages/gabriel.html")
+            console.log(html)
+            res.end("oii")
+        }
+        else if (rota === "/diego") {
+            res.writeHead(200, { "Content-type": "text/plan" })
+            res.end("sobre")
         }
         else {
             res.writeHead(404, { "Content-type": "text/plan" })
