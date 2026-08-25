@@ -17,11 +17,21 @@ const app = {
         else if (rota === "/diego") {
             enviarArquivos(res, "pages/diego.html", "text/html")
         } 
-        else if (rota === "/diego/cv") {
+        else if (rota === "/diego/curriculo") {
             enviarArquivos(res, "pages/documentos/meu-pdf.pdf", "application/pdf")
         }
-        else if(rota === "/gabriel/cv"){
+        else if(rota === "/diego/sobre"){ 
+            enviarArquivos(res, "pages/diegoSobre.html", "text/html")
+        }
+        else if (rota === "/gabriel/sobre") {
+            enviarArquivos(res, "pages/gabrielSobre.html", "text/html")
+        }
+        else if(rota === "/gabriel/curriculo"){
             enviarArquivos(res, "pages/documentos/GabrielLima.pdf", "application/pdf")
+        }
+        else if(rota === "/projeto"){
+            enviarArquivos(res, "pages/documentos/projeto.pdf", "application/pdf")
+
         }
         else {
             res.writeHead(404, { "Content-Type": "text/plain" })
