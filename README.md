@@ -3,7 +3,7 @@
 isso é apenas uma atividade
 
 
-## __como rodar essa bagaça__
+## __como rodar__
 
 primeiro clona esse repo na sua maquína
 
@@ -23,10 +23,10 @@ node app.js
 ```
 
 
-__obs.:__ tenha a desgraça do node na sua maquina caso não tenha instala 
+__obs.:__ tenha o node na sua maquina caso não tenha instala 
 
 
-## quem fez a porra toda 
+## authores
 diego 
 <br>
 gabriel

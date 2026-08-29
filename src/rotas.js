@@ -18,7 +18,7 @@ const app = {
             enviarArquivos(res, "pages/diego.html", "text/html")
         } 
         else if (rota === "/diego/curriculo") {
-            enviarArquivos(res, "pages/documentos/meu-pdf.pdf", "application/pdf")
+            enviarArquivos(res, "docs/Diego.pdf", "application/pdf")
         }
         else if(rota === "/diego/sobre"){ 
             enviarArquivos(res, "pages/diegoSobre.html", "text/html")
@@ -27,10 +27,10 @@ const app = {
             enviarArquivos(res, "pages/gabrielSobre.html", "text/html")
         }
         else if(rota === "/gabriel/curriculo"){
-            enviarArquivos(res, "pages/documentos/GabrielLima.pdf", "application/pdf")
+            enviarArquivos(res, "docs/GabrielLima.pdf", "application/pdf")
         }
         else if(rota === "/projeto"){
-            enviarArquivos(res, "pages/documentos/projeto.pdf", "application/pdf")
+            enviarArquivos(res, "docs/projeto.pdf", "application/pdf")
 
         }
         else {
