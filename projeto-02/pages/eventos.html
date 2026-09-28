@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="cupcake">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos - Fatec Zona Sul</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-base-100">
+  <!-- Navbar -->
+  <div class="navbar bg-neutral text-neutral-content sticky top-0 z-50 shadow-lg">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base-content">
+          <li><a href="/">Início</a></li>
+          <li><a href="/vestibular">Vestibular</a></li>
+          <li><a href="/cursos">Cursos</a></li>
+          <li><a href="/infraestrutura">Infraestrutura</a></li>
+          <li><a href="/eventos">Eventos</a></li>
+          <li><a href="/quem-somos">Quem Somos</a></li>
+        </ul>
+      </div>
+      <a href="/" class="text-xl font-bold hover:opacity-80 transition-opacity">Fatec Zona Sul</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="/">Início</a></li>
+        <li><a href="/vestibular">Vestibular</a></li>
+        <li><a href="/cursos">Cursos</a></li>
+        <li><a href="/infraestrutura">Infraestrutura</a></li>
+        <li><a href="/eventos">Eventos</a></li>
+        <li><a href="/quem-somos">Quem Somos</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero bg-base-200 py-16">
+    <div class="hero-content text-center">
+      <div class="max-w-3xl">
+        <h1 class="text-5xl font-bold mb-4">Eventos</h1>
+        <p class="text-xl opacity-80">
+          Calendário e programação oficial da instituição
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Calendário de Eventos -->
+  <div class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8 text-center">Calendário Acadêmico 2027</h2>
+    
+    <div class="overflow-x-auto mb-12">
+      <table class="table table-zebra w-full">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Evento</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="badge badge-soft">Jan</span></td>
+            <td>Início das Aulas</td>
+            <td>Início do semestre letivo 2027/1</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-soft">Fev</span></td>
+            <td>Semana de Tecnologia</td>
+            <td>Semana dedicada a palestras e workshops de tecnologia</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-soft">Mar</span></td>
+            <td>Feira de Estágios</td>
+            <td>Feira com empresas parceiras para oportunidades de estágio</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-soft">Abr</span></td>
+            <td>Semana de Inovação</td>
+            <td>Apresentação de projetos inovadores dos alunos</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-soft">Mai</span></td>
+            <td>Hackathon</td>
+            <td>Maratona de programação com desafios reais do mercado</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-soft">Jun</span></td>
+            <td>Encerramento do Semestre</td>
+            <td>Encerramento das atividades do semestre letivo 2027/1</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-soft">Ago</span></td>
+            <td>Início das Aulas</td>
+            <td>Início do semestre letivo 2027/2</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-soft">Set</span></td>
+            <td>Semana Cultural</td>
+            <td>Eventos culturais e apresentações artísticas</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-soft">Out</span></td>
+            <td>Semana do Empreendedorismo</td>
+            <td>Palestras e workshops sobre empreendedorismo</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-soft">Nov</span></td>
+            <td>Feira de Ciências</td>
+            <td>Apresentação de trabalhos científicos dos alunos</td>
+          </tr>
+          <tr>
+            <td><span class="badge badge-soft">Dez</span></td>
+            <td>Formatura</td>
+            <td>Cerimônia de formatura dos concluintes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Próximos Eventos -->
+    <h2 class="text-3xl font-bold mb-8 text-center">Próximos Eventos</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <div class="card bg-base-100 shadow-xl">
+        <div class="card-body">
+          <div class="flex justify-between items-start">
+            <span class="badge badge-soft">15 SET</span>
+            <span class="badge badge-outline">Online</span>
+          </div>
+          <h3 class="card-title mt-2">Workshop de React</h3>
+          <p class="text-sm">Workshop prático sobre desenvolvimento front-end com React.js</p>
+          <div class="card-actions justify-end mt-4">
+            <button class="btn btn bg-black text-white hover:bg-gray-800 btn-sm">Inscrever-se</button>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl">
+        <div class="card-body">
+          <div class="flex justify-between items-start">
+            <span class="badge badge-soft">22 SET</span>
+            <span class="badge badge-outline">Presencial</span>
+          </div>
+          <h3 class="card-title mt-2">Palestra: IA no Mercado</h3>
+          <p class="text-sm">Palestra sobre Inteligência Artificial e suas aplicações no mercado de trabalho</p>
+          <div class="card-actions justify-end mt-4">
+            <button class="btn btn bg-black text-white hover:bg-gray-800 btn-sm">Inscrever-se</button>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl">
+        <div class="card-body">
+          <div class="flex justify-between items-start">
+            <span class="badge badge-soft">05 OUT</span>
+            <span class="badge badge-outline">Presencial</span>
+          </div>
+          <h3 class="card-title mt-2">Feira de Estágios 2027</h3>
+          <p class="text-sm">Feira com mais de 30 empresas parceiras oferecendo vagas de estágio</p>
+          <div class="card-actions justify-end mt-4">
+            <button class="btn btn bg-black text-white hover:bg-gray-800 btn-sm">Inscrever-se</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eventos Anteriores -->
+    <div class="bg-base-200 rounded-2xl p-8">
+      <h2 class="text-3xl font-bold mb-6 text-center">Eventos Anteriores</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="card bg-base-100 shadow">
+          <div class="card-body">
+            <h3 class="card-title">Hackathon 2027</h3>
+            <p class="text-sm">Maratona de programação com 20 equipes e prêmios para os 3 primeiros colocados.</p>
+            <div class="badge badge-soft mt-2">2027</div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow">
+          <div class="card-body">
+            <h3 class="card-title">Semana de Tecnologia 2027</h3>
+            <p class="text-sm">Uma semana inteira dedicada a palestras e workshops sobre as últimas tendências em tecnologia.</p>
+            <div class="badge badge-soft mt-2">2027</div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow">
+          <div class="card-body">
+            <h3 class="card-title">Feira de Estágios 2027</h3>
+            <p class="text-sm">Mais de 40 empresas participantes e centenas de vagas de estágio oferecidas.</p>
+            <div class="badge badge-soft mt-2">2027</div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow">
+          <div class="card-body">
+            <h3 class="card-title">Formatura 2027</h3>
+            <p class="text-sm">Cerimônia de formatura dos concluintes dos cursos de ADS, DSM, Gestão Empresarial e Logística.</p>
+            <div class="badge badge-soft mt-2">2027</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+  <!-- Footer -->
+  <footer class="footer bg-base-300 text-base-content p-10 flex flex-col md:flex-row gap-2.5 md:gap-8 justify-between">
+    <div>
+      <span class="footer-title text-lg font-bold">Fatec Zona Sul</span>
+      <p class="text-sm mt-2 max-w-xs">
+        Dom Paulo Evaristo Arns<br>
+        Formando tecnólogos de excelência desde 2006.
+      </p>
+      <div class="flex gap-4 mt-4">
+        <a href="https://www.facebook.com/fateczonasuloficial" target="_blank" class="link link-hover">Facebook</a>
+        <a href="https://www.instagram.com/fateczonasul_oficial" target="_blank" class="link link-hover">Instagram</a>
+        <a href="https://www.linkedin.com/school/fatec-zona-sul/" target="_blank" class="link link-hover">LinkedIn</a>
+      </div>
+    </div>
+    <nav>
+      <h6 class="footer-title">Navegação</h6>
+      <a class="link link-hover" href="/">Início</a>
+      <a class="link link-hover" href="/vestibular">Vestibular</a>
+      <a class="link link-hover" href="/cursos">Cursos</a>
+      <a class="link link-hover" href="/infraestrutura">Infraestrutura</a>
+      <a class="link link-hover" href="/eventos">Eventos</a>
+      <a class="link link-hover" href="/quem-somos">Quem Somos</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Cursos</h6>
+      <a class="link link-hover" href="/cursos/ads">ADS</a>
+      <a class="link link-hover" href="/cursos/dsm">DSM</a>
+      <a class="link link-hover" href="/cursos/gestao-empresarial">Gestão Empresarial</a>
+      <a class="link link-hover" href="/cursos/logistica">Logística</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Contato</h6>
+      <a class="link link-hover">Rua Frederico Grotte, 322</a>
+      <a class="link link-hover">Jardim Vergueiro - Santo Amaro</a>
+      <a class="link link-hover">CEP: 05818-270 - São Paulo/SP</a>
+      <a class="link link-hover">(11) 5851-8949</a>
+      <a class="link link-hover">f137.vestibulares@fatec.sp.gov.br</a>
+    </nav>
+  </footer>
+</html>

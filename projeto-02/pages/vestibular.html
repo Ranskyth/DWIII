@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="cupcake">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vestibular - Fatec Zona Sul</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-base-100">
+  <!-- Navbar -->
+  <div class="navbar bg-neutral text-neutral-content sticky top-0 z-50 shadow-lg">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base-content">
+          <li><a href="/">Início</a></li>
+          <li><a href="/vestibular">Vestibular</a></li>
+          <li><a href="/cursos">Cursos</a></li>
+          <li><a href="/infraestrutura">Infraestrutura</a></li>
+          <li><a href="/eventos">Eventos</a></li>
+          <li><a href="/quem-somos">Quem Somos</a></li>
+        </ul>
+      </div>
+      <a href="/" class="text-xl font-bold hover:opacity-80 transition-opacity">Fatec Zona Sul</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="/">Início</a></li>
+        <li><a href="/vestibular">Vestibular</a></li>
+        <li><a href="/cursos">Cursos</a></li>
+        <li><a href="/infraestrutura">Infraestrutura</a></li>
+        <li><a href="/eventos">Eventos</a></li>
+        <li><a href="/quem-somos">Quem Somos</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero bg-base-200 py-16">
+    <div class="hero-content text-center">
+      <div class="max-w-3xl">
+        <h1 class="text-5xl font-bold mb-4">Vestibular Fatec</h1>
+        <p class="text-xl opacity-80">
+          Processo seletivo para os Cursos Superiores de Tecnologia da Fatec Zona Sul
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Prazos e Informações -->
+  <div class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Prazos e Informações</h2>
+    
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <div class="card bg-base-100 shadow-xl border-l-4 border-primary">
+        <div class="card-body">
+          <h3 class="card-title text-neutral">Inscrições</h3>
+          <p class="text-sm">As inscrições são realizadas exclusivamente pelo site oficial do Vestibular Fatec.</p>
+          <div class="badge badge-soft mt-2">Online</div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl border-l-4 border-secondary">
+        <div class="card-body">
+          <h3 class="card-title text-neutral">Prova</h3>
+          <p class="text-sm">Prova objetiva com questões de múltipla escolha e redação.</p>
+          <div class="badge badge-soft mt-2">Presencial</div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl border-l-4 border-accent">
+        <div class="card-body">
+          <h3 class="card-title text-neutral">Resultado</h3>
+          <p class="text-sm">Divulgação do resultado no site oficial do Vestibular Fatec.</p>
+          <div class="badge badge-soft mt-2">Online</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Como Funciona -->
+    <div class="bg-base-200 rounded-2xl p-8 mb-12">
+      <h3 class="text-2xl font-bold mb-6 text-center">Como Funciona o Vestibular</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="font-bold text-lg mb-3 text-neutral">Etapa 1: Inscrição</h4>
+          <p class="text-sm mb-4">A inscrição é feita online pelo site oficial do Vestibular Fatec. É necessário preencher o formulário e pagar a taxa de inscrição (isenta para candidatos de baixa renda).</p>
+          
+          <h4 class="font-bold text-lg mb-3 text-neutral">Etapa 2: Prova</h4>
+          <p class="text-sm">A prova é composta por 54 questões de múltipla escolha e uma redação. As questões abrangem conteúdos do Ensino Médio.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-3 text-neutral">Etapa 3: Classificação</h4>
+          <p class="text-sm mb-4">Os candidatos são classificados por ordem decrescente de pontuação. A nota final é calculada com base na prova objetiva e na redação.</p>
+          
+          <h4 class="font-bold text-lg mb-3 text-neutral">Etapa 4: Matrícula</h4>
+          <p class="text-sm">Os candidatos classificados devem comparecer à Fatec com a documentação necessária para realizar a matrícula.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Documentos Necessários -->
+    <div class="card bg-base-100 shadow-xl mb-12">
+      <div class="card-body">
+        <h3 class="card-title text-2xl mb-4">Documentos Necessários para Matrícula</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2"><span class="text-neutral">✓</span> Documento de identidade (RG)</li>
+            <li class="flex items-center gap-2"><span class="text-neutral">✓</span> CPF</li>
+            <li class="flex items-center gap-2"><span class="text-neutral">✓</span> Certificado de conclusão do Ensino Médio</li>
+            <li class="flex items-center gap-2"><span class="text-neutral">✓</span> Histórico escolar</li>
+          </ul>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2"><span class="text-neutral">✓</span> Comprovante de residência</li>
+            <li class="flex items-center gap-2"><span class="text-neutral">✓</span> Foto 3x4 recente</li>
+            <li class="flex items-center gap-2"><span class="text-neutral">✓</span> Título de eleitor (se maior de 18 anos)</li>
+            <li class="flex items-center gap-2"><span class="text-neutral">✓</span> Certificado de reservista (sexo masculino)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cursos com Vagas -->
+    <div class="mb-12">
+      <h3 class="text-2xl font-bold mb-6 text-center">Cursos e Vagas Oferecidas</h3>
+      <div class="overflow-x-auto">
+        <table class="table table-zebra w-full">
+          <thead>
+            <tr>
+              <th>Curso</th>
+              <th>Período</th>
+              <th>Vagas/Semestre</th>
+              <th>Duração</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Desenvolvimento de Software Multiplataforma</td>
+              <td><span class="badge badge-soft">Manhã</span></td>
+              <td>25</td>
+              <td>6 semestres</td>
+            </tr>
+            <tr>
+              <td>Desenvolvimento de Software Multiplataforma</td>
+              <td><span class="badge badge-soft">Noite</span></td>
+              <td>25</td>
+              <td>6 semestres</td>
+            </tr>
+            <tr>
+              <td>Desenvolvimento de Software Multiplataforma</td>
+              <td><span class="badge badge-soft">Tarde</span></td>
+              <td>25</td>
+              <td>6 semestres</td>
+            </tr>
+            <tr>
+              <td>Gestão Empresarial</td>
+              <td><span class="badge badge-soft">Manhã</span></td>
+              <td>25</td>
+              <td>6 semestres</td>
+            </tr>
+            <tr>
+              <td>Gestão Empresarial</td>
+              <td><span class="badge badge-soft">Noite</span></td>
+              <td>25</td>
+              <td>6 semestres</td>
+            </tr>
+            <tr>
+              <td>Gestão Empresarial</td>
+              <td><span class="badge badge-soft">EaD</span></td>
+              <td>25</td>
+              <td>6 semestres</td>
+            </tr>
+            <tr>
+              <td>Logística</td>
+              <td><span class="badge badge-soft">Tarde</span></td>
+              <td>23</td>
+              <td>6 semestres</td>
+            </tr>
+            <tr>
+              <td>Logística</td>
+              <td><span class="badge badge-soft">Noite</span></td>
+              <td>25</td>
+              <td>6 semestres</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center bg-neutral text-neutral-content rounded-2xl p-12">
+      <h3 class="text-3xl font-bold mb-4">Inscreva-se Agora!</h3>
+      <p class="text-lg mb-6">Acesse o site oficial do Vestibular Fatec para realizar sua inscrição.</p>
+      <a href="https://vestibular.fatec.sp.gov.br" target="_blank" class="btn btn bg-black text-white hover:bg-gray-800 btn-lg">
+        Acessar Vestibular Fatec
+      </a>
+    </div>
+  </div>
+
+</body>
+  <!-- Footer -->
+  <footer class="footer bg-base-300 text-base-content p-10 flex flex-col md:flex-row gap-2.5 md:gap-8 justify-between">
+    <div>
+      <span class="footer-title text-lg font-bold">Fatec Zona Sul</span>
+      <p class="text-sm mt-2 max-w-xs">
+        Dom Paulo Evaristo Arns<br>
+        Formando tecnólogos de excelência desde 2006.
+      </p>
+      <div class="flex gap-4 mt-4">
+        <a href="https://www.facebook.com/fateczonasuloficial" target="_blank" class="link link-hover">Facebook</a>
+        <a href="https://www.instagram.com/fateczonasul_oficial" target="_blank" class="link link-hover">Instagram</a>
+        <a href="https://www.linkedin.com/school/fatec-zona-sul/" target="_blank" class="link link-hover">LinkedIn</a>
+      </div>
+    </div>
+    <nav>
+      <h6 class="footer-title">Navegação</h6>
+      <a class="link link-hover" href="/">Início</a>
+      <a class="link link-hover" href="/vestibular">Vestibular</a>
+      <a class="link link-hover" href="/cursos">Cursos</a>
+      <a class="link link-hover" href="/infraestrutura">Infraestrutura</a>
+      <a class="link link-hover" href="/eventos">Eventos</a>
+      <a class="link link-hover" href="/quem-somos">Quem Somos</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Cursos</h6>
+      <a class="link link-hover" href="/cursos/ads">ADS</a>
+      <a class="link link-hover" href="/cursos/dsm">DSM</a>
+      <a class="link link-hover" href="/cursos/gestao-empresarial">Gestão Empresarial</a>
+      <a class="link link-hover" href="/cursos/logistica">Logística</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Contato</h6>
+      <a class="link link-hover">Rua Frederico Grotte, 322</a>
+      <a class="link link-hover">Jardim Vergueiro - Santo Amaro</a>
+      <a class="link link-hover">CEP: 05818-270 - São Paulo/SP</a>
+      <a class="link link-hover">(11) 5851-8949</a>
+      <a class="link link-hover">f137.vestibulares@fatec.sp.gov.br</a>
+    </nav>
+  </footer>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="cupcake">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos - Fatec Zona Sul</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-base-100">
+  <!-- Navbar -->
+  <div class="navbar bg-neutral text-neutral-content sticky top-0 z-50 shadow-lg">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base-content">
+          <li><a href="/">Início</a></li>
+          <li><a href="/vestibular">Vestibular</a></li>
+          <li><a href="/cursos">Cursos</a></li>
+          <li><a href="/infraestrutura">Infraestrutura</a></li>
+          <li><a href="/eventos">Eventos</a></li>
+          <li><a href="/quem-somos">Quem Somos</a></li>
+        </ul>
+      </div>
+      <a href="/" class="text-xl font-bold hover:opacity-80 transition-opacity">Fatec Zona Sul</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="/">Início</a></li>
+        <li><a href="/vestibular">Vestibular</a></li>
+        <li><a href="/cursos">Cursos</a></li>
+        <li><a href="/infraestrutura">Infraestrutura</a></li>
+        <li><a href="/eventos">Eventos</a></li>
+        <li><a href="/quem-somos">Quem Somos</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero bg-base-200 py-16">
+    <div class="hero-content text-center">
+      <div class="max-w-3xl">
+        <h1 class="text-5xl font-bold mb-4">Nossos Cursos</h1>
+        <p class="text-xl opacity-80">
+          Cursos Superiores de Tecnologia gratuitos com formação de excelência
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lista de Cursos -->
+  <div class="py-16 container mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- ADS -->
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+        <div class="card-body">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h2 class="card-title text-2xl">Análise e Desenvolvimento de Sistemas</h2>
+              <p class="text-sm opacity-70 mt-1">Eixo Tecnológico: Informação e Comunicação</p>
+            </div>
+            <span class="badge badge-soft">Tecnólogo</span>
+          </div>
+          <p class="mb-4">
+            O Tecnólogo em ADS analisa, projeta, documenta, especifica, testa, implanta e mantém sistemas computacionais de informação. Atua com linguagens de programação, banco de dados, engenharia de software e gestão de projetos de TI.
+          </p>
+          <div class="flex gap-2 flex-wrap mb-4">
+            <span class="badge badge-soft">Manhã</span>
+            <span class="badge badge-soft">Noite</span>
+            <span class="badge badge-outline">6 semestres</span>
+          </div>
+          <div class="card-actions justify-end">
+            <a href="/cursos/ads" class="btn btn bg-black text-white hover:bg-gray-800">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DSM -->
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+        <div class="card-body">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h2 class="card-title text-2xl">Desenvolvimento de Software Multiplataforma</h2>
+              <p class="text-sm opacity-70 mt-1">Eixo Tecnológico: Informação e Comunicação</p>
+            </div>
+            <span class="badge badge-soft">Tecnólogo</span>
+          </div>
+          <p class="mb-4">
+            Projeta, desenvolve e testa software para múltiplas plataformas: Web, Desktop, Móvel, Nuvem e IoT. Utiliza conceitos de Segurança da Informação, Inteligência Artificial e metodologias ágeis.
+          </p>
+          <div class="flex gap-2 flex-wrap mb-4">
+            <span class="badge badge-soft">Tarde</span>
+            <span class="badge badge-outline">6 semestres</span>
+          </div>
+          <div class="card-actions justify-end">
+            <a href="/cursos/dsm" <a href="#" class="btn btn bg-black text-white hover:bg-gray-800">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gestão Empresarial -->
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+        <div class="card-body">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h2 class="card-title text-2xl">Gestão Empresarial</h2>
+              <p class="text-sm opacity-70 mt-1">Eixo Tecnológico: Gestão e Negócios</p>
+            </div>
+            <span class="badge badge-soft">Tecnólogo</span>
+          </div>
+          <p class="mb-4">
+            Elabora e implementa planos de negócios, utilizando métodos e técnicas de gestão na formação e organização empresarial. Atua nos processos de comercialização, suprimento, armazenamento e movimentação de materiais.
+          </p>
+          <div class="flex gap-2 flex-wrap mb-4">
+            <span class="badge badge-soft">Manhã</span>
+            <span class="badge badge-soft">Noite</span>
+            <span class="badge badge-soft">EaD</span>
+            <span class="badge badge-outline">6 semestres</span>
+          </div>
+          <div class="card-actions justify-end">
+            <a href="/cursos/gestao-empresarial" class="btn btn bg-black text-white hover:bg-gray-800">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logística -->
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+        <div class="card-body">
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h2 class="card-title text-2xl">Logística</h2>
+              <p class="text-sm opacity-70 mt-1">Eixo Tecnológico: Gestão e Negócios</p>
+            </div>
+            <span class="badge badge-soft">Tecnólogo</span>
+          </div>
+          <p class="mb-4">
+            Gerencia o fluxo de produtos e pessoas em uma empresa. Cuida da aquisição, recebimento, armazenagem, distribuição e transporte de produtos, além do controle e processamento de pedidos.
+          </p>
+          <div class="flex gap-2 flex-wrap mb-4">
+            <span class="badge badge-soft">Tarde</span>
+            <span class="badge badge-soft">Noite</span>
+            <span class="badge badge-outline">6 semestres</span>
+          </div>
+          <div class="card-actions justify-end">
+            <a href="/cursos/logistica" class="btn btn bg-black text-white hover:bg-gray-800">Ver detalhes</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Info Adicional -->
+  <div class="bg-base-200 py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold mb-4">Por que estudar na Fatec Zona Sul?</h3>
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="card bg-base-100 shadow">
+          <div class="card-body items-center text-center">
+            <div class="text-4xl mb-2">🏆</div>
+            <h4 class="font-bold">Qualidade Reconhecida</h4>
+            <p class="text-sm">Cursos com nota máxima no MEC</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow">
+          <div class="card-body items-center text-center">
+            <div class="text-4xl mb-2">💰</div>
+            <h4 class="font-bold">Gratuito</h4>
+            <p class="text-sm">Ensino público de qualidade</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow">
+          <div class="card-body items-center text-center">
+            <div class="text-4xl mb-2">💼</div>
+            <h4 class="font-bold">Empregabilidade</h4>
+            <p class="text-sm">Alta taxa de colocação no mercado</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+  <!-- Footer -->
+  <footer class="footer bg-base-300 text-base-content p-10 flex flex-col md:flex-row gap-2.5 md:gap-8 justify-between">
+    <div>
+      <span class="footer-title text-lg font-bold">Fatec Zona Sul</span>
+      <p class="text-sm mt-2 max-w-xs">
+        Dom Paulo Evaristo Arns<br>
+        Formando tecnólogos de excelência desde 2006.
+      </p>
+      <div class="flex gap-4 mt-4">
+        <a href="https://www.facebook.com/fateczonasuloficial" target="_blank" class="link link-hover">Facebook</a>
+        <a href="https://www.instagram.com/fateczonasul_oficial" target="_blank" class="link link-hover">Instagram</a>
+        <a href="https://www.linkedin.com/school/fatec-zona-sul/" target="_blank" class="link link-hover">LinkedIn</a>
+      </div>
+    </div>
+    <nav>
+      <h6 class="footer-title">Navegação</h6>
+      <a class="link link-hover" href="/">Início</a>
+      <a class="link link-hover" href="/vestibular">Vestibular</a>
+      <a class="link link-hover" href="/cursos">Cursos</a>
+      <a class="link link-hover" href="/infraestrutura">Infraestrutura</a>
+      <a class="link link-hover" href="/eventos">Eventos</a>
+      <a class="link link-hover" href="/quem-somos">Quem Somos</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Cursos</h6>
+      <a class="link link-hover" href="/cursos/ads">ADS</a>
+      <a class="link link-hover" href="/cursos/dsm">DSM</a>
+      <a class="link link-hover" href="/cursos/gestao-empresarial">Gestão Empresarial</a>
+      <a class="link link-hover" href="/cursos/logistica">Logística</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Contato</h6>
+      <a class="link link-hover">Rua Frederico Grotte, 322</a>
+      <a class="link link-hover">Jardim Vergueiro - Santo Amaro</a>
+      <a class="link link-hover">CEP: 05818-270 - São Paulo/SP</a>
+      <a class="link link-hover">(11) 5851-8949</a>
+      <a class="link link-hover">f137.vestibulares@fatec.sp.gov.br</a>
+    </nav>
+  </footer>
+</html>

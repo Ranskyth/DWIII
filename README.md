@@ -1,32 +1,19 @@
-# Bem vindo
+# DWIII - Desenvolvimento Web III
 
-isso é apenas uma atividade
+Repositório da disciplina de Desenvolvimento Web III - Fatec Zona Sul
 
+## Projetos
 
-## __como rodar__
+### Projeto 01
+- **Descrição:** Sistema de currículos com upload de arquivos
 
-primeiro clona esse repo na sua maquína
+- **Porta:** 3333
 
-```
-git clone https://github.com/ranskyth/DWIII
-```
+### Projeto 02
+- **Descrição:** Portal completo (Frontend e Backend) para o site do curso Fatec Zona Sul
 
-segundo entra no projeto
-```
-cd DWII
-```
+- **Porta:** 2000
 
-terceiro roda nosso projetinho muito louco 
-
-```
-node app.js
-```
-
-
-__obs.:__ tenha o node na sua maquina caso não tenha instala 
-
-
-## authores
-diego 
-<br>
-gabriel
+## Equipe
+- Diego
+- Gabriel Lima

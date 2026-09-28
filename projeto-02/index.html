@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="cupcake">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatec Zona Sul - Portal do Curso</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-base-100">
+  <!-- Navbar -->
+  <div class="navbar bg-neutral text-neutral-content sticky top-0 z-50 shadow-lg">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base-content">
+          <li><a href="/">Início</a></li>
+          <li><a href="/vestibular">Vestibular</a></li>
+          <li><a href="/cursos">Cursos</a></li>
+          <li><a href="/infraestrutura">Infraestrutura</a></li>
+          <li><a href="/eventos">Eventos</a></li>
+          <li><a href="/quem-somos">Quem Somos</a></li>
+        </ul>
+      </div>
+      <a href="/" class="text-xl font-bold hover:opacity-80 transition-opacity">Fatec Zona Sul</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="/">Início</a></li>
+        <li><a href="/vestibular">Vestibular</a></li>
+        <li><a href="/cursos">Cursos</a></li>
+        <li><a href="/infraestrutura">Infraestrutura</a></li>
+        <li><a href="/eventos">Eventos</a></li>
+        <li><a href="/quem-somos">Quem Somos</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero bg-base-200 min-h-[80vh]">
+    <div class="hero-content text-center">
+      <div class="max-w-4xl">
+        <div class="badge badge-soft badge-lg mb-4">Centro Paula Souza</div>
+        <h1 class="text-5xl font-bold mb-6">Fatec Zona Sul</h1>
+        <p class="text-xl mb-2">Dom Paulo Evaristo Arns</p>
+        <p class="text-lg mb-8 opacity-80">
+          Formando tecnólogos de excelência desde 2006. Cursos superiores de tecnologia gratuitos e de qualidade reconhecida pelo MEC.
+        </p>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <a href="/cursos" class="btn btn bg-black text-white hover:bg-gray-800 btn-lg">Nossos Cursos</a>
+          <a href="/vestibular" class="btn btn-outline btn-lg">Vestibular 2027</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Section -->
+  <div class="bg-neutral text-neutral-content py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold">4</div>
+          <div class="text-sm opacity-80">Cursos Superiores</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold">18+</div>
+          <div class="text-sm opacity-80">Anos de História</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold">2.400h</div>
+          <div class="text-sm opacity-80">Carga Horária</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold">Grátis</div>
+          <div class="text-sm opacity-80">Ensino Público</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cursos em Destaque -->
+  <div class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Nossos Cursos</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+        <div class="card-body">
+          <div class="badge badge-soft mb-2">Manhã / Noite</div>
+          <h3 class="card-title">ADS</h3>
+          <p class="text-sm">Análise e Desenvolvimento de Sistemas</p>
+          <div class="card-actions justify-end mt-4">
+            <a href="/cursos/ads" class="btn btn bg-black text-white hover:bg-gray-800 btn-sm">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+        <div class="card-body">
+          <div class="badge badge-soft mb-2">Tarde</div>
+          <h3 class="card-title">DSM</h3>
+          <p class="text-sm">Desenvolvimento de Software Multiplataforma</p>
+          <div class="card-actions justify-end mt-4">
+            <a href="/cursos/dsm" class="btn btn bg-black text-white hover:bg-gray-800 btn-sm">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+        <div class="card-body">
+          <div class="badge badge-soft mb-2">Manhã / Noite / EaD</div>
+          <h3 class="card-title">Gestão Empresarial</h3>
+          <p class="text-sm">Processos Gerenciais</p>
+          <div class="card-actions justify-end mt-4">
+            <a href="/cursos/gestao-empresarial" class="btn btn bg-black text-white hover:bg-gray-800 btn-sm">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+        <div class="card-body">
+          <div class="badge badge-soft mb-2">Tarde / Noite</div>
+          <h3 class="card-title">Logística</h3>
+          <p class="text-sm">Gestão da Cadeia de Suprimentos</p>
+          <div class="card-actions justify-end mt-4">
+            <a href="/cursos/logistica" class="btn btn bg-black text-white hover:bg-gray-800 btn-sm">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sobre a Instituição -->
+  <div class="bg-base-200 py-16">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl font-bold mb-6">Sobre a Fatec Zona Sul</h2>
+          <p class="mb-4">
+            Inaugurada em 2 de março de 2006, a Fatec Zona Sul - Dom Paulo Evaristo Arns é a 26ª Faculdade de Tecnologia do estado de São Paulo. Localizada no bairro Jardim São Luís, em Santo Amaro, a instituição oferece cursos superiores de tecnologia gratuitos e de alta qualidade.
+          </p>
+          <p class="mb-6">
+            Com infraestrutura moderna, laboratórios equipados e corpo docente qualificado, a Fatec Zona Sul forma profissionais preparados para o mercado de trabalho, com ênfase na prática e na inovação.
+          </p>
+          <a href="/quem-somos" class="btn btn bg-black text-white hover:bg-gray-800">Conheça Nossa Equipe</a>
+        </div>
+        <div class="lg:w-1/2">
+          <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+              <h3 class="card-title mb-4">Informações</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-2">
+                  <span class="text-neutral font-bold">📍</span>
+                  <span>Rua Frederico Grotte, 322 – Jardim Vergueiro (Santo Amaro), São Paulo - SP</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-neutral font-bold">📞</span>
+                  <span>(11) 5851-8949</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-neutral font-bold">📧</span>
+                  <span>f137.vestibulares@fatec.sp.gov.br</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-neutral font-bold">🕐</span>
+                  <span>Segunda a Sexta: 07h às 23h</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Vestibular -->
+  <div class="py-16 bg-neutral text-neutral-content">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Pronto para o Vestibular?</h2>
+      <p class="text-lg mb-8 max-w-2xl mx-auto">
+        As inscrições para o Vestibular Fatec estão abertas. Garanta sua vaga em um dos melhores cursos superiores de tecnologia do Brasil.
+      </p>
+      <a href="/vestibular" class="btn btn bg-black text-white hover:bg-gray-800 btn-lg">Acessar Vestibular</a>
+    </div>
+  </div>
+
+</body>
+  <!-- Footer -->
+  <footer class="footer bg-base-300 text-base-content p-10 flex flex-col md:flex-row gap-2.5 md:gap-8 justify-between">
+    <div>
+      <span class="footer-title text-lg font-bold">Fatec Zona Sul</span>
+      <p class="text-sm mt-2 max-w-xs">
+        Dom Paulo Evaristo Arns<br>
+        Formando tecnólogos de excelência desde 2006.
+      </p>
+      <div class="flex gap-4 mt-4">
+        <a href="https://www.facebook.com/fateczonasuloficial" target="_blank" class="link link-hover">Facebook</a>
+        <a href="https://www.instagram.com/fateczonasul_oficial" target="_blank" class="link link-hover">Instagram</a>
+        <a href="https://www.linkedin.com/school/fatec-zona-sul/" target="_blank" class="link link-hover">LinkedIn</a>
+      </div>
+    </div>
+    <nav>
+      <h6 class="footer-title">Navegação</h6>
+      <a class="link link-hover" href="/">Início</a>
+      <a class="link link-hover" href="/vestibular">Vestibular</a>
+      <a class="link link-hover" href="/cursos">Cursos</a>
+      <a class="link link-hover" href="/infraestrutura">Infraestrutura</a>
+      <a class="link link-hover" href="/eventos">Eventos</a>
+      <a class="link link-hover" href="/quem-somos">Quem Somos</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Cursos</h6>
+      <a class="link link-hover" href="/cursos/ads">ADS</a>
+      <a class="link link-hover" href="/cursos/dsm">DSM</a>
+      <a class="link link-hover" href="/cursos/gestao-empresarial">Gestão Empresarial</a>
+      <a class="link link-hover" href="/cursos/logistica">Logística</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Contato</h6>
+      <a class="link link-hover">Rua Frederico Grotte, 322</a>
+      <a class="link link-hover">Jardim Vergueiro - Santo Amaro</a>
+      <a class="link link-hover">CEP: 05818-270 - São Paulo/SP</a>
+      <a class="link link-hover">(11) 5851-8949</a>
+      <a class="link link-hover">f137.vestibulares@fatec.sp.gov.br</a>
+    </nav>
+  </footer>
+</html>
