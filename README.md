@@ -6,18 +6,19 @@ Repositório da disciplina de Desenvolvimento Web III - Fatec Zona Sul
 
 ### Projeto 01
 - **Descrição:** Sistema de currículos com upload de arquivos
-
 - **Porta:** 3333
 
 ### Projeto 02
 - **Descrição:** Portal completo (Frontend e Backend) para o site do curso Fatec Zona Sul
-
 - **Porta:** 2000
 
 ### Projeto 03
 - **Descrição:** Site institucional FATEC Zona Sul
-
 - **Porta:** 3000
+
+### Projeto 04
+- **Descrição:** Portal completo (Frontend e Backend) para o site do evento Tech & Code Summit
+- **Porta:** 2000
 
 ## Equipe
 - Diego
