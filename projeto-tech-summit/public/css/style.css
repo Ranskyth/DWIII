@@ -330,13 +330,23 @@ p + p { margin-top: 0.9em; }
 /* ---------- venue tiles ---------- */
 .venue-tiles {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2px;
+  background: rgba(0,0,0,0.1);
 }
 .venue-tile {
   padding: 3rem;
-  border-right: 2px solid rgba(0,0,0,0.1);
-  border-bottom: 2px solid rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.4);
+  border-right: none;
+  border-bottom: none;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: background-color 0.2s;
+}
+.venue-tile:hover {
+  background: rgba(255,255,255,0.6);
 }
 .venue-tile h3 {
   font-size: var(--step-head);
