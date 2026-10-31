@@ -82,7 +82,7 @@ p + p { margin-top: 0.9em; }
 .grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
 
 /* ---------- sections — full-bleed colour fields ---------- */
-.chapter { min-height: 90svh; position: relative; }
+.chapter { min-height: 60svh; position: relative; }
 .chapter--hero  { background: var(--field-2); color: var(--field-2-ink); }
 .chapter--intro { background: var(--field-5); color: var(--field-5-ink); }
 .chapter--trilhas { background: var(--field-1); color: var(--field-1-ink); }
@@ -184,7 +184,7 @@ p + p { margin-top: 0.9em; }
 /* ---------- section headings ---------- */
 .chapter > .wrap > h2 {
   font-size: clamp(3rem, 7vw, 7rem);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* ---------- intro mosaic ---------- */
@@ -359,6 +359,11 @@ p + p { margin-top: 0.9em; }
   color: var(--muted);
 }
 
+.venue-tile p {
+  margin: 0;
+  opacity: 0.8;
+}
+
 /* ---------- team ---------- */
 .team-grid {
   display: grid;
@@ -380,7 +385,7 @@ p + p { margin-top: 0.9em; }
 /* ---------- CTA section ---------- */
 .cta-section {
   text-align: center;
-  padding: 8rem var(--margin);
+  padding: 1rem var(--margin);
 }
 .cta-section h2 {
   font-size: clamp(3rem, 7vw, 7rem);
@@ -395,6 +400,7 @@ p + p { margin-top: 0.9em; }
 
 /* ---------- footer ---------- */
 .footer {
+  background-color: #252525;
   padding: 4rem var(--margin);
   text-align: center;
   font-family: var(--font-display);
@@ -405,6 +411,9 @@ p + p { margin-top: 0.9em; }
   color: var(--muted);
 }
 
+.py-50{
+ padding: 50px 0;
+}
 /* ---------- inner page nav ---------- */
 .inner-nav {
   padding: 1rem var(--margin);
@@ -478,13 +487,13 @@ p + p { margin-top: 0.9em; }
   font-size: var(--step-small);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  border: 2px solid currentColor;
+  border: 2px solid black;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
 }
 .btn-inscrever:hover {
-  background: currentColor;
-  color: var(--field-1-ink);
+  background: black;
+  color: #fff;
 }
 
 /* ---------- inscription form ---------- */
@@ -588,3 +597,10 @@ p + p { margin-top: 0.9em; }
 
 .lines .line { display: block; overflow: hidden; padding-bottom: 0.08em; margin-bottom: -0.08em; }
 .lines [data-line] { display: block; }
+
+@media(max-width: 1686px){
+  .trails-grid{
+    display:flex;
+    flex-direction: column;
+  }
+}
