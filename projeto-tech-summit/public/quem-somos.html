@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos - Tech & Code Summit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&family=Red+Hat+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="js">
+    <nav class="nav">
+        <div class="logo">TECH & CODE SUMMIT</div>
+        <div class="nav-links">
+            <a href="/">Início</a>
+            <a href="/inscricoes">Inscrições</a>
+            <a href="/trilhas">Trilhas</a>
+            <a href="/local">Local</a>
+            <a href="/programacao">Programação</a>
+            <a href="/quem-somos">Quem Somos</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="chapter chapter--sobre">
+            <div class="inner-nav">
+                <a href="/" class="back">← Voltar ao início</a>
+            </div>
+            <div class="wrap" style="padding-top: 6rem;">
+                <h1 class="display" data-reveal>Quem Somos</h1>
+            </div>
+        </section>
+
+        <section class="chapter chapter--intro">
+            <div class="wrap">
+                <p class="lead muted" data-reveal style="opacity: 0.8; max-width: 50ch;">Portal desenvolvido por alunos da disciplina DWIII - Desenvolvimento Web III.</p>
+                
+                <div class="team-grid" style="margin-top: 3rem;">
+                    <div class="team-card" data-reveal>
+                        <h3>Diego</h3>
+                        <p>RA: 123456</p>
+                        <p class="muted">Tecnologias: HTML, CSS, JavaScript, Node.js</p>
+                    </div>
+                    <div class="team-card" data-reveal>
+                        <h3>Gabriel</h3>
+                        <p>RA: 654321</p>
+                        <p class="muted">Tecnologias: React, Node.js, Python, SQL</p>
+                    </div>
+                </div>
+
+                <div class="team-card" style="margin-top: 3rem;" data-reveal>
+                    <h3>Sobre o Projeto</h3>
+                    <p class="muted">O objetivo do projeto foi aplicar na prática os conceitos de desenvolvimento web aprendidos em aula, criando um site completo com integração entre backend e frontend, utilizando tecnologias modernas e boas práticas de desenvolvimento.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Tech & Code Summit · Desenvolvido por alunos de DWIII</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('[data-reveal]');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+            reveals.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

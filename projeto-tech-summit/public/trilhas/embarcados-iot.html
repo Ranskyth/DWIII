@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embarcados e IoT - Tech & Code Summit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&family=Red+Hat+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="js">
+    <nav class="nav">
+        <div class="logo">TECH & CODE SUMMIT</div>
+        <div class="nav-links">
+            <a href="/">Início</a>
+            <a href="/inscricoes">Inscrições</a>
+            <a href="/trilhas">Trilhas</a>
+            <a href="/local">Local</a>
+            <a href="/programacao">Programação</a>
+            <a href="/quem-somos">Quem Somos</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="chapter chapter--trilhas">
+            <div class="inner-nav">
+                <a href="/trilhas" class="back">← Voltar às trilhas</a>
+            </div>
+            <div class="wrap" style="padding-top: 6rem;">
+                <h1 class="display" data-reveal>Embarcados e<br>IoT</h1>
+                <p class="lead muted" data-reveal style="opacity: 0.8;">Sistemas embarcados, sensores e Internet das Coisas.</p>
+            </div>
+        </section>
+
+        <section class="chapter chapter--intro">
+            <div class="wrap">
+                <div class="team-card" data-reveal>
+                    <h3>Palestrante</h3>
+                    <p style="font-size: var(--step-head); color: var(--accent);">Roberto Silva</p>
+                    <p class="muted">Especialista em IoT e hardware aberto</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Tech & Code Summit · Desenvolvido por alunos de DWIII</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('[data-reveal]');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+            reveals.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

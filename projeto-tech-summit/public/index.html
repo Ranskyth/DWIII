@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech & Code Summit 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&family=Red+Hat+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="js">
+    <nav class="nav">
+        <div class="logo">TECH & CODE SUMMIT</div>
+        <div class="nav-links">
+            <a href="/">Início</a>
+            <a href="/inscricoes">Inscrições</a>
+            <a href="/trilhas">Trilhas</a>
+            <a href="/local">Local</a>
+            <a href="/programacao">Programação</a>
+            <a href="/quem-somos">Quem Somos</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="chapter chapter--hero hero">
+            <div class="date">15 e 16 de novembro de 2026 · São Paulo, SP</div>
+            <h1 class="display">Tech & Code<br>Summit</h1>
+            <p class="tagline lead">O maior evento de tecnologia e inovação da região.</p>
+            <a href="/inscricoes" class="btn">Inscreva-se</a>
+        </section>
+
+        <section class="chapter chapter--intro">
+            <div class="wrap">
+                <div class="mosaic">
+                    <div class="mosaic-tile mosaic-tile--slogan" data-reveal>
+                        <h2>CODANDO O<br>FUTURO</h2>
+                    </div>
+                    <div class="mosaic-tile mosaic-tile--figure" data-reveal>
+                        2026
+                    </div>
+                    <div class="mosaic-tile mosaic-tile--photo" data-reveal></div>
+                    <div class="mosaic-tile mosaic-tile--text" data-reveal>
+                        <p>Do aprendizado ao networking, o Tech & Code Summit é o ponto de encontro para quem quer construir o futuro da tecnologia. Palestras, workshops e debates com os maiores nomes da indústria.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chapter chapter--trilhas">
+            <div class="wrap">
+                <h2 data-reveal>Trilhas do Evento</h2>
+                <div id="trilhas-list" class="trails-grid">
+                    <!-- Content loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <section class="chapter chapter--prog">
+            <div class="wrap">
+                <h2 data-reveal>Programação</h2>
+                <div id="programacao-list" class="prog-list">
+                    <!-- Content loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <section class="chapter chapter--cta">
+            <div class="wrap cta-section">
+                <h2 data-reveal>Garanta sua vaga</h2>
+                <p class="lead" data-reveal>As inscrições estão abertas. Não fique de fora do maior evento de tecnologia da região.</p>
+                <a href="/inscricoes" class="btn" data-reveal>Inscreva-se Agora</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Tech & Code Summit · Desenvolvido por alunos de DWIII</p>
+    </footer>
+
+    <script src="/js/main.js" type="module"></script>
+    <script>
+        // Reveal on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('[data-reveal]');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+            reveals.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

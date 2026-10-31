@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrições - Tech & Code Summit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&family=Red+Hat+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="js">
+    <nav class="nav">
+        <div class="logo">TECH & CODE SUMMIT</div>
+        <div class="nav-links">
+            <a href="/">Início</a>
+            <a href="/inscricoes">Inscrições</a>
+            <a href="/trilhas">Trilhas</a>
+            <a href="/local">Local</a>
+            <a href="/programacao">Programação</a>
+            <a href="/quem-somos">Quem Somos</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="chapter chapter--hero">
+            <div class="inner-nav">
+                <a href="/" class="back">← Voltar ao início</a>
+            </div>
+            <div class="wrap" style="padding-top: 8rem; padding-bottom: 6rem;">
+                <h1 class="display" data-reveal>Inscrições</h1>
+            </div>
+        </section>
+
+        <section class="chapter chapter--intro">
+            <div class="wrap">
+                <h2 data-reveal>Escolha seu lote</h2>
+                <div class="lotes-grid">
+                    <div class="lote-card" data-reveal>
+                        <h3>Lote 1</h3>
+                        <p>Early Bird · até 15/08/2026</p>
+                        <div class="price">R$ 299</div>
+                        <a href="#">Garantir vaga →</a>
+                    </div>
+                    <div class="lote-card" data-reveal>
+                        <h3>Lote 2</h3>
+                        <p>16/08 a 30/09/2026</p>
+                        <div class="price">R$ 399</div>
+                        <a href="#">Garantir vaga →</a>
+                    </div>
+                    <div class="lote-card" data-reveal>
+                        <h3>Lote 3</h3>
+                        <p>01/10 a 10/11/2026</p>
+                        <div class="price">R$ 499</div>
+                        <a href="#">Garantir vaga →</a>
+                    </div>
+                </div>
+                <p class="muted" data-reveal>Chegue com 30 minutos de antecedência para retirada do crachá no dia do evento.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Tech & Code Summit · Desenvolvido por alunos de DWIII</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('[data-reveal]');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+            reveals.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
