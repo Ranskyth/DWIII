@@ -32,7 +32,7 @@
             </div>
         </section>
 
-        <section class="chapter chapter--intro">
+        <section class="chapter chapter--trilhas">
             <div class="wrap">
                 <h2 data-reveal>Escolha seu lote</h2>
                 <div class="lotes-grid">
@@ -40,22 +40,51 @@
                         <h3>Lote 1</h3>
                         <p>Early Bird · até 15/08/2026</p>
                         <div class="price">R$ 299</div>
-                        <a href="#">Garantir vaga →</a>
+                        <button class="btn-inscrever" data-lote="1" data-preco="299">Selecionar</button>
                     </div>
                     <div class="lote-card" data-reveal>
                         <h3>Lote 2</h3>
                         <p>16/08 a 30/09/2026</p>
                         <div class="price">R$ 399</div>
-                        <a href="#">Garantir vaga →</a>
+                        <button class="btn-inscrever" data-lote="2" data-preco="399">Selecionar</button>
                     </div>
                     <div class="lote-card" data-reveal>
                         <h3>Lote 3</h3>
                         <p>01/10 a 10/11/2026</p>
                         <div class="price">R$ 499</div>
-                        <a href="#">Garantir vaga →</a>
+                        <button class="btn-inscrever" data-lote="3" data-preco="499">Selecionar</button>
                     </div>
                 </div>
                 <p class="muted" data-reveal>Chegue com 30 minutos de antecedência para retirada do crachá no dia do evento.</p>
+            </div>
+        </section>
+
+        <section class="chapter chapter--intro" id="form-section" style="display: none;">
+            <div class="wrap">
+                <h2 data-reveal>Complete sua inscrição</h2>
+                <form id="inscricao-form" class="inscricao-form" data-reveal>
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="lote">Lote selecionado</label>
+                        <input type="text" id="lote" name="lote" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="preco">Valor</label>
+                        <input type="text" id="preco" name="preco" readonly>
+                    </div>
+                    <button type="submit" class="btn btn--submit">Confirmar inscrição</button>
+                </form>
+                <div id="mensagem-sucesso" style="display: none; padding: 2rem; background: var(--accent); color: var(--accent-ink); text-align: center;" data-reveal>
+                    <h3>✓ Inscrição realizada!</h3>
+                    <p>Você receberá um e-mail de confirmação.</p>
+                </div>
             </div>
         </section>
     </main>
@@ -75,6 +104,50 @@
                 });
             }, { threshold: 0.1 });
             reveals.forEach(el => observer.observe(el));
+
+            // Botões de seleção de lote
+            document.querySelectorAll('.btn-inscrever').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const lote = btn.dataset.lote;
+                    const preco = btn.dataset.preco;
+                    
+                    document.getElementById('lote').value = `Lote ${lote}`;
+                    document.getElementById('preco').value = `R$ ${preco}`;
+                    
+                    document.getElementById('form-section').style.display = 'block';
+                    document.getElementById('form-section').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            // Formulário de inscrição
+            document.getElementById('inscricao-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const formData = {
+                    nome: document.getElementById('nome').value,
+                    email: document.getElementById('email').value,
+                    lote: document.getElementById('lote').value
+                };
+                
+                try {
+                    const res = await fetch('/api/inscrever', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(formData)
+                    });
+                    
+                    const result = await res.json();
+                    
+                    if (result.success) {
+                        document.getElementById('inscricao-form').style.display = 'none';
+                        document.getElementById('mensagem-sucesso').style.display = 'block';
+                    } else {
+                        alert('Erro ao realizar inscrição. Tente novamente.');
+                    }
+                } catch (err) {
+                    alert('Erro de conexão. Tente novamente.');
+                }
+            });
         });
     </script>
 </body>

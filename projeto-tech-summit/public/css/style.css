@@ -454,6 +454,84 @@ p + p { margin-top: 0.9em; }
   padding-bottom: 2px;
 }
 
+/* ---------- form buttons ---------- */
+.btn-inscrever {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background: transparent;
+  color: inherit;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: var(--step-small);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 2px solid currentColor;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn-inscrever:hover {
+  background: currentColor;
+  color: var(--field-1-ink);
+}
+
+/* ---------- inscription form ---------- */
+.inscricao-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.form-group {
+  margin-bottom: 2rem;
+}
+.form-group label {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: var(--step-small);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+.form-group input {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0,0,0,0.1);
+  border: none;
+  border-bottom: 3px solid currentColor;
+  color: inherit;
+  font-family: var(--font-text);
+  font-size: var(--step-body);
+  transition: border-color 0.2s;
+}
+.form-group input:focus {
+  outline: none;
+  border-bottom-color: var(--accent);
+}
+.form-group input[readonly] {
+  opacity: 0.7;
+  border-bottom-style: dashed;
+}
+.btn--submit {
+  width: 100%;
+  padding: 1.25rem 2rem;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: var(--step-body);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.btn--submit:hover {
+  background: #14a038;
+}
+.btn--submit:active {
+  transform: scale(0.98);
+}
+
 /* ---------- responsive ---------- */
 @media (max-width: 768px) {
   .nav-links { display: none; }

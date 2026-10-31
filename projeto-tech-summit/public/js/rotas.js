@@ -22,6 +22,58 @@ const app = {
       return;
     }
 
+    // API para lista de inscritos
+    if (rota === "/api/inscritos") {
+      const dataPath = path.join(__dirname, "..", "data", "inscritos.json");
+      if (fs.existsSync(dataPath)) {
+        enviarArquivos(res, "data/inscritos.json", "application/json");
+      } else {
+        enviarArquivos(res, JSON.stringify([]), "application/json");
+      }
+      return;
+    }
+
+    // POST para nova inscrição
+    if (rota === "/api/inscrever" && req.method === "POST") {
+      let body = "";
+      req.setEncoding("utf8");
+      req.on("data", chunk => {
+        body += chunk;
+      });
+      req.on("end", () => {
+        console.log("Body recebido:", body);
+        try {
+          const dados = JSON.parse(body);
+          console.log("Dados parseados:", dados);
+          
+          const dataPath = path.join(__dirname, "..", "data", "inscritos.json");
+          let inscritos = [];
+          if (fs.existsSync(dataPath)) {
+            const fileData = JSON.parse(fs.readFileSync(dataPath, "utf8"));
+            inscritos = fileData.inscritos || [];
+          }
+          
+          inscritos.push({
+            id: Date.now(),
+            nome: dados.nome,
+            email: dados.email,
+            lote: dados.lote,
+            dataInscricao: new Date().toISOString()
+          });
+          
+          fs.writeFileSync(dataPath, JSON.stringify(inscritos, null, 2));
+          
+          res.writeHead(200, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ success: true, mensagem: "Inscrição realizada com sucesso!" }));
+        } catch (err) {
+          console.error("Erro ao processar:", err);
+          res.writeHead(400, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ success: false, mensagem: "Erro ao processar inscrição: " + err.message }));
+        }
+      });
+      return;
+    }
+
     // Página inicial
     if (rota === "/") {
       enviarArquivos(res, "index.html", "text/html");
