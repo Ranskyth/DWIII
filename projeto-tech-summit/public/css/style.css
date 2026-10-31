@@ -338,7 +338,6 @@ p + p { margin-top: 0.9em; }
   padding: 3rem;
   background: #ffffff;
   border-radius: 0;
-  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -359,9 +358,6 @@ p + p { margin-top: 0.9em; }
   opacity: 0.7;
   color: var(--muted);
 }
-.venue-tile h3 {
-  font-size: var(--step-head);
-  margin: 0 0 0.75rem;
 }
 .venue-tile p {
   margin: 0;

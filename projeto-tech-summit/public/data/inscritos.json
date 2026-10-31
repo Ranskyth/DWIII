@@ -1,1 +1,9 @@
-{"inscritos":[]}
+[
+  {
+    "id": 1793483967545,
+    "nome": "João Silva",
+    "email": "joao@teste.com",
+    "lote": "Lote 2",
+    "dataInscricao": "2026-10-31T21:59:27.545Z"
+  }
+]
