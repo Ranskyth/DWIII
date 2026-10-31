@@ -330,23 +330,34 @@ p + p { margin-top: 0.9em; }
 /* ---------- venue tiles ---------- */
 .venue-tiles {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 2rem;
 }
 .venue-tile {
   padding: 3rem;
-  background: rgba(255,255,255,0.5);
-  border: none;
-  min-height: 220px;
+  background: #ffffff;
+  border-radius: 0;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  transition: background-color 0.2s, transform 0.2s;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .venue-tile:hover {
-  background: rgba(255,255,255,0.7);
-  transform: translateY(-4px);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.venue-tile h3 {
+  font-size: var(--step-head);
+  margin: 0 0 0.75rem;
+  color: var(--ink);
+}
+.venue-tile p {
+  margin: 0;
+  opacity: 0.7;
+  color: var(--muted);
 }
 .venue-tile h3 {
   font-size: var(--step-head);
